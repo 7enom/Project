@@ -5,46 +5,51 @@
     font-family: "Amiri", serif;
 }
 
-a {
-    text-decoration: none;
-    color: black;
-}
 
 body {
     min-height: 100vh;
-    background: url('./Background/a2.jpg') no-repeat;
+    background: url('/Background/photo_2024-05-04_20-43-08.jpg') no-repeat;
     background-position: center;
     background-size: cover;
 }
 
-header {
-    display: flex;
-    justify-content: space-between;
-    border-bottom: 2px solid black;
-    margin-bottom: 15px;
+a {
+    text-decoration: none;
+    color: white;
 }
 
-.logo {
-    font-style: italic;
-    font-size: 30px;
-    padding: 10px 120px;
-    color: black;
+a:hover {
+    color: #1765a8cc;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    padding: 20px;
 }
 
 ul {
-    width: 70%;
     list-style: none;
+    width: 40%;
     display: flex;
-    justify-content: space-evenly;
-    padding: 20px 20px;
+    justify-content: space-between;
+    font-size: 20px;
+}
+
+button {
+    padding: 5px;
+    background-color: #d3603dcc;
+    color: white;
+    border: 1px solid white;
+    border-radius: 10px;
     font-size: 20px;
 }
 
 .object p {
-    color: black;
+    color: white;
     font-size: 20px;
     text-align: center;
-    border-bottom: 2px solid black;
     padding: 10px;
     margin-bottom: 20px;
 }
@@ -57,18 +62,52 @@ ul {
 .object span {
     color: white;
     position: absolute;
-    left: 30px;
-    background: #4ec34ed1;
+    left: 20px;
+    background: #d3603dcc;
     width: 110px;
     border-radius: 20px;
 }
 
-p::before {
+.frist-item::before {
     content: counter(add-num);
     position: absolute;
     right: 40px;
     color: white;
-    background: #4ec34ed1;
+    background: #d3603dcc;
     width: 30px;
     border-radius: 20px;
+}
+
+section {
+    text-align: center;
+    display: flex;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    padding: 10px;
+    position: absolute;
+    width: 90%;
+}
+
+.end-item {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+.end-item span {
+    color: white;
+    position: absolute;
+    background: #d3603dcc;
+    width: 110px;
+    border-radius: 20px;
+    bottom: -35px;
+}
+
+.p-span-one {
+    right: 450px;
+}
+.p-span-two {
+    left: 120px;
 }
